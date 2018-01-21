@@ -1,264 +1,33 @@
+@import "fotns";
+@import "header";
+@import "main-block";
+@import "footer";
+
 body {
-  margin: 0;
-  padding: 0;
-  background-image: url("../img/bg-site.jpg");
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/bg-site.jpg");
 }
 
 body * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  font-size: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 100%;
 }
 
 .container {
-
-  width: 60.9375%;
-  margin: 0 auto;
+    width: 60.9375%;
+    margin: 0 auto;
 }
 
-.header {
-  background-image: url("../img/bg-header.jpg");
-  background-position: top center;
-  background-size: cover;
-  background-repeat: no-repeat;
-
-
-  .bar {
-    background-color: #db3534;
-    box-shadow: 0 3px 20px #000000;
-
-    .bar-wrapper {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 0;
-    }
-    
-    .menu {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-        
-      span {
-        display: block;
-        width: 2rem;
-        height: 5px;
-        background-color: #ffffff;
-        margin: 4px 0;
-      }
-    }
-
-    .nav-bar {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      align-items: center;
-
-    .class1 {
-      display: flex;
-
-      .cart {
-        margin-right: 10px;
-      }
-
-      .ppp {
-        margin-right: 27px;
-
-        .count {
-          color: #ffffff;
-        }
-
-        .summ {
-          color: #ffffff;
-        }
-      }
-    }
-
-      .btn {
-        display: flex;
-        flex-wrap: wrap;
-
-        .ru {
-          display: flex;
-          flex-grow: 1;
-          width: 30px;
-          height: 30px;
-          color: #ffffff;
-          border: 1px solid #ff5553;
-          border-top: none;
-          background-color: #992524;
-          outline: none;
-          padding: 7px;
-          margin-right: 10px;
-          box-shadow: inset 1px 3px 12px rgba(0, 0, 0, 1);
-        }
-
-        .ua {
-          @extend .ru;
-          padding-left: 5px;
-          color: #ee3b3a;
-          margin-right: 10px;
-        }
-
-        .input {
-          display: flex;
-          position: relative;
-
-          input {
-            @extend .ru;
-            width: 23%;
-            color: #ee3b3a;
-            margin-right: 0;
-
-            &::placeholder {
-              color: #ee3b3a;
-            }
-          }
-
-          .loupe {
-            margin-left: auto;
-            position: absolute;
-            left: 82.5%;
-            padding: 5px 0;
-          }
-        }
-      }
-    }
-  }
-
-  .tool-bar {
-      display: flex;
-      align-items: flex-start;
-      height: 273px;
-      margin-top: 35px;
-      
-    .tool-bar-wrapper {
-      display: flex;
-      justify-content: space-between;
-        
-      .main-links {
-
-        .login-block {
-          display: flex;
-          flex-direction: column;
-          padding: 7px 0;
-
-          .login {
-            font-size: 0.9em;
-            color: #ffffff;
-            text-decoration: none;
-          }
-
-          .registration {
-            @extend .login;
-            text-decoration: underline;
-          }
-
-        }
-        .social-btn {
-          display: flex;
-          font-size: 0em;
-
-          img {
-            margin-right: 13px;
-          }
-        }
-
-        .purchases-block {
-            display: flex;
-            flex-wrap: wrap;
-            width: 217px;
-            color: #ffffff;
-            border: 2px solid #ff4544;
-            border-radius: 4px;
-            border-bottom: none;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-            background-color: #dd3635;
-            margin-top: 4px;
-
-          .cart {
-            margin: 11px 29px 10px 10px;
-          }
-
-          .text-cart {
-            font-size: 1.25em;
-            line-height: 24px;
-            font-weight: bold;
-            text-transform: capitalize;
-              padding-top: 5px;
-            padding-bottom: 10px;
-          }
-
-          .count {
-            font-size: 0.75em;
-            line-height: 13px;
-          }
-            
-          .summ {
-              font-size: 0.75em;
-              line-height: 13px;
-              padding-bottom: 7px;
-          }
-        }
-      }
-    }
-
-    .logo {
-      text-align: center;
-        
-      h1 {
-        font-size: 3em;
-        color: transparent;
-        text-transform: uppercase;
-        background-color: rgb(64, 92, 37);
-        -webkit-background-clip: text;
-        -moz-background-clip: text;
-        background-clip: text;
-        text-shadow: rgba(116, 140, 45, 0.56) 1px 2px 3px;
-      }
-    }
-      
-      .contacts {
-          line-height: 23px;
-          color: #ffffff;
-          text-shadow: 0 3px 5px black;
-          margin-left: 13px;
-          
-          .hot-line {
-              font-size: 1.125rem;
-              
-          }
-          
-          .phone {
-              font-size: 1.4375rem;
-              font-weight: 600;
-          }
-          
-          .work-day {
-              @extend .hot-line;
-          }
-          
-          .call-worker {
-              font-size: 2.3125rem;
-              line-height: 25px;
-              text-align: center;
-              text-transform: uppercase;
-              text-shadow: none;
-              border: 2px solid #ff4544;
-              border-radius: 4px;
-              border-bottom: none;
-              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-              background-color: #dd3635;
-              margin-top: 11px;
-              padding: 10px 20px;
-
-              
-              span {
-                  font-size: 1.625rem;
-                  //line-height: 10px;
-              }
-          }  
-      }
-  }
+.bent-text {
+    color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    text-shadow: 0px 3px 5px rgba(177, 231, 110, 0.15);
+//    background-color: rgba(45, 77, 5, 1);
+    background-image: url("../img/bg-for-text.jpg");
 }

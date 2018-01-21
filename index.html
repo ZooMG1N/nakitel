@@ -6,6 +6,8 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
     <title>Document</title>
 </head>
 <body>
@@ -15,17 +17,19 @@
     <div class="bar">
         <div class="container">
             <div class="bar-wrapper">
-                <div class="menu">
+                <div class="hamburger-menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
 
                 <div class="nav-bar">
-                    <div class="class1">
-                        <img src="img/cart.png" alt="" class="cart">
+                    <div class="nav-bar-purchases">
+                        <div class="nav-bar-cart-img">
+                            <img src="img/cart.png" alt="" class="cart">
+                        </div>
 
-                        <div class="ppp">
+                        <div class="your-order">
                             <p class="count">Товаров: 3</p>
                             <p class="summ">Сумма: 5.000 грн.</p>
                         </div>
@@ -49,6 +53,16 @@
         <div class="container">
             <div class="tool-bar-wrapper">
             <div class="main-links">
+               <div class="hide-menu">
+                  <ul class="hide-menu-list">
+                      <li class="hide-menu-item"><a href="">на главную</a></li>
+                      <li class="hide-menu-item"><a href="">о компании</a></li>
+                      <li class="hide-menu-item"><a href="">каталог продукции</a></li>
+                      <li class="hide-menu-item"><a href="">акции</a></li>
+                      <li class="hide-menu-item"><a href="">гарантия</a></li>
+                      <li class="hide-menu-item"><a href="">контакты</a></li>
+                  </ul>
+               </div>
                 <div class="login-block">
                     <a href="#" class="login">Войти на сайт</a>
                     <a href="#" class="registration">Зарегистрироваться</a>
@@ -63,11 +77,13 @@
                 </div>
 
                 <div class="purchases-block">
-                    <img src="img/cart.png" alt="" class="cart">
+                    <div class="img-cart">
+                        <img src="img/cart.png" alt="">
+                    </div>
                     <div class="purchases">
                         <p class="text-cart">корзина</p>
-                        <p class="count">Товаров: 3</p>
-                        <p class="summ">Сумма: 5.000 грн.</p>
+                        <p class="count">Товаров: <span>3</span></p>
+                        <p class="summ">Сумма: <span>5.000</span></p>
                     </div>
                 </div>
             </div>
@@ -75,7 +91,7 @@
 
             <div class="logo">
                 <img src="img/logo.png" alt="">
-                <h1>nakitel</h1>
+                <p class="descriptor bent-text">nakitel</p>
             </div>
 
             <div class="contacts">
@@ -87,8 +103,125 @@
         </div>
         </div>
     </div>
+    
+    <div class="container">
+        <div class="doors-block">
+            <div class="doors">
+                <div class="door-pack">
+                    <img src="img/veneer-doors.png" alt="" class="img-door">
+                </div>
+                 <p class="doors-description bent-text">двери<br><span>шпонированные</span></p>
+            </div>
+           
+            <div class="doors">
+                <div class="door-pack">
+                    <img src="img/eco-veneer-doors.png" alt="" class="img-door">
+                </div>
+                 <p class="doors-description bent-text">двери<br><span>экошпон</span></p>
+            </div>
+            
+            <div class="doors">
+                <div class="door-pack">
+                    <img src="img/massif-door.png" alt="" class="img-door">
+                </div>
+                 <p class="doors-description bent-text">двери<br><span>из массива</span></p>
+            </div>
+            
+            <div class="doors">
+                <div class="door-pack">
+                    <img src="img/entrance-doors.png" alt="">
+                </div>
+                 <p class="doors-description bent-text">двери<br><span>входные</span></p>
+            </div>
+            
+            <div class="doors">
+                <div class="door-pack">
+                    <img src="img/special-doors.png" alt="">
+                </div>
+                <p class="doors-description bent-text">двери<br><span>спец назанчения</span></p>
+            </div>
+        </div>
+    </div>
 </header>
 
-<script src="js/main.js"></script>
+<div class="container">
+    <main class="main">
+        <div class="slider">
+            <div class="radio-block">
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+                <input type="radio">
+            </div>
+            <div class="slide-first-img">
+                <img src="img/dom.png" alt="">
+                <p class="slide-first-text">Дверь на дачу</p>
+            </div>
+            
+        </div>
+        <p class="about-company-title bent-text">о компании</p>
+        <div class="main-content">
+            <div class="side-bar">
+                <ul class="side-bar-menu">
+                    <li class="side-bar-menu-item"><a href="#" class="bent-text">главная</a></li>
+                    <li class="side-bar-menu-item"><a href="#" class="bent-text" style="color: #cc0000">о компании</a></li>
+                    <li class="side-bar-menu-item"><a href="#" class="bent-text">каталог продукции</a></li>
+                    <li class="side-bar-menu-item"><a href="#" class="bent-text">оплата / доставка</a></li>
+                    <li class="side-bar-menu-item"><a href="#" class="bent-text">акции</a></li>
+                    <li class="side-bar-menu-item"><a href="#" class="bent-text">гарантия</a></li>
+                    <li class="side-bar-menu-item"><a href="#" class="bent-text">контакты</a></li>
+                </ul>
+            </div>
+            <div class="about-company">
+                <p>Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности позволяет оценить значение существенных финансовых и административных условий. Значимость этих проблем настолько очевидна, что консультация с широким активом представляет собой интересный эксперимент проверки направлений прогрессивного развития.</p><br>
+                <p>Идейные соображения высшего порядка, а также сложившаяся структура организации влечет за собой процесс внедрения и модернизации системы обучения кадров, соответствует насущным потребностям.</p><br>
+                <p>Таким образом сложившаяся структура организации требуют определения и уточнения направлений прогрессивного развития. С другой стороны сложившаяся структура организации способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что укрепление и развитие структуры влечет за собой процесс внедрения и модернизации соответствующий условий активизации.</p><br>
+                <p>С другой стороны начало повседневной работы по формированию позиции позволяет оценить значение дальнейших направлений развития. Идейные соображения высшего порядка, а также реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации позиций, занимаемых участниками в отношении поставленных задач. С другой стороны начало повседневной работы по формированию позиции представляет собой интересный эксперимент проверки новых предложений. Равным образом рамки и место обучения кадров в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям.</p><br>
+                <p>Повседневная практика показывает, что дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям. Не следует, однако забывать, что рамки и место обучения кадров обеспечивает широкому кругу (специалистов) участие в формировании модели развития. </p><br>
+                <p>Товарищи! начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке систем массовогоу частия.</p>
+            </div>
+             <div class="banner-block">
+                <div class="banner-place-contacts">
+                    <p class="banner-hot-line">Телефон горячей линии</p>
+                    <p class="banner-phone">+38(067) 402 71 01</p>
+                    <p class="banner-work-day">(пн.- пт. с 9.00 до 18.00)</p>
+                    <p class="banner-call-worker">вызвать<br><span>замерщика</span></p>
+                </div>
+                
+                 <p class="banner-place">банерная <br><span>область</span></p>
+                
+                <div class="banner-place-contacts">
+                    <p class="banner-hot-line">Телефон горячей линии</p>
+                    <p class="banner-phone">+38(067) 402 71 01</p>
+                    <p class="banner-work-day">(пн.- пт. с 9.00 до 18.00)</p>
+                    <p class="banner-call-worker">вызвать<br><span>замерщика</span></p>
+                </div>
+                
+                 <p class="banner-place">банерная <br><span>область</span></p>
+            </div>
+        </div>
+    </main>
+</div>
+
+<footer class="footer">
+    <div class="wrapper-footer-menu">
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">nakitel &copy; 2014</p>
+                <ul class="footer-menu">
+                    <li class="menu-item"><a href="#">контакты</a></li>
+                    <li class="menu-item"><a href="#">акции</a></li>
+                    <li class="menu-item"><a href="#">каталог</a></li>
+                    <li class="menu-item"><a href="#">оплата / доставка</a></li>
+                    <li class="menu-item"><a href="#">гарантия</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!--<script src="js/main.js"></script>-->
+<script src="js/hide-menu.js"></script>
 </body>
 </html>
