@@ -1,0 +1,163 @@
+.main {
+    .slider {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+        .radio-block {
+            display: flex;
+            width: 75px;
+            justify-content: space-between;
+            margin-top: 80px;
+            margin-bottom: 10px;
+        }
+        
+        .slide-first-img {
+            display: flex;
+            position: relative;
+            width: 100%;
+            height: 325px;
+            border: 10px solid #ffffff;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7),
+                  inset 0 3px 15px rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            
+            img {
+                transform: scale(0.695, 0.95);
+                opacity: 0.95;
+                margin-top: -313px;
+                margin-left: -83px;
+                position: relative;
+                z-index: -2;
+            }
+            
+            .slide-first-text {
+                position: absolute;
+                font-family: "Helvetica-Medium-Italic";
+                font-size: 4.5rem;
+                line-height: 13px;
+                color: #ffffff;
+            }
+        }
+    }
+    
+    .about-company-title {
+        font-family: "Bebas-Bold";
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 33px;
+        text-align: center;
+        margin: 90px 0 51px;
+    }
+    
+    .main-content {
+        display: flex;
+        justify-content: space-between;
+        
+        .side-bar {
+            margin-right: 34px;
+            
+            &-menu {
+                list-style-type: none;
+            }
+            
+            .bent-text {
+                background-image: none;
+            }
+            
+            a {
+                color: #006600;
+                font-family: "Helvetica-Regular";
+                font-size: 0.858rem;
+                line-height: 30px;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+        }
+        
+        .about-company {
+            width: 51.5%;
+            padding: 30px;
+            border: 7px solid #ffffff;
+            background-image: url("../img/paper.jpg");
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+            
+            p {
+                font-family: "Helvetica-Light";
+                font-size: 1rem;
+            }
+        }
+        
+        .banner-block {
+            width: 25.8%;
+            margin-left: 30px;
+            
+            .banner-place-contacts {
+                line-height: 23px;
+                text-align: center;
+                margin-bottom: 56px;
+
+              .banner-hot-line {
+                  font-family: "Helvetica-Light";
+                  font-size: 1.125rem;
+              } 
+
+              .banner-phone {
+                  font-family: "Helvetica-Medium";
+                  font-size: 1.4375rem;
+              }
+
+              .banner-work-day {
+                  @extend .banner-hot-line;
+              }
+
+              .banner-call-worker {
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+                  font-family: "Helvetica-Bold";
+                  font-size: 2.3125rem;
+                  line-height: 30px;
+                  color: #ffffff;
+                  text-align: center;
+                  text-transform: uppercase;
+                  border: 2px solid #ff4544;
+                  border-radius: 4px;
+                  border-bottom: none;
+                  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+                  background-color: #dd3635;
+                  padding: 10px 20px;
+                  margin-top: 11px;
+
+                  span {
+                      font-family: "Helvetica-Bold";
+                      font-size: 1.625rem;
+                  }
+              }  
+            }
+            
+            .banner-place {
+                font-family: "Bebas-Bold";
+                font-size: 3.112rem;
+                line-height: 55px;
+                color: #ffffff;
+                text-align: center;
+                text-transform: uppercase;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+                background: repeating-linear-gradient( -45deg, #e46463, #e46463 .5em,  transparent .5em, transparent 1em); 
+                background-color: #dd3534;
+                padding: 24px 18px 23px 17px; 
+                margin-bottom: 33px;
+                
+                span {
+                    font-family: "Bebas-Bold";
+                    font-size: 3.912rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,348 @@
+.header {
+    background-image: url("../img/bg-header.png");
+    background-position: top center;
+    background-size: 100% 540px;
+    background-repeat: no-repeat;
+
+
+  .bar {
+      background-color: #db3534;
+      box-shadow: 0 3px 20px #000000;
+
+    .bar-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+    }
+    
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        cursor: pointer;
+        
+      span {
+          display: block;
+          width: 2rem;
+          height: 5px;
+          background-color: #ffffff;
+          margin: 4px 0;
+      }
+    }
+
+    .nav-bar {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+
+    .nav-bar-purchases {
+        display: flex;
+        
+        .nav-bar-cart-img {
+            width: 40px;
+            margin-right: 10px;
+            
+            .cart {
+                width: 100%;
+            }
+        }
+
+      .your-order {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin-right: 27px;
+
+        .count {
+            font-family: "Helvetica-Light";
+            font-size: 0.85rem;
+            color: #ffffff;
+        }
+
+        .summ {
+            font-family: "Helvetica-Light";
+            font-size: 0.85rem;
+            color: #ffffff;
+        }
+      }
+    }
+
+      .btn {
+          display: flex;
+          flex-wrap: wrap;
+
+        .ru {
+            display: flex;
+            flex-grow: 1;
+            width: 30px;
+            height: 30px;
+            color: #ffffff;
+            border: 1px solid #ff5553;
+            border-top: none;
+            background-color: #992524;
+            outline: none;
+            padding: 7px;
+            margin-right: 10px;
+            box-shadow: inset 1px 3px 12px rgba(0, 0, 0, 1);
+        }
+
+        .ua {
+            @extend .ru;
+            padding-left: 5px;
+            color: #ee3b3a;
+            margin-right: 10px;
+        }
+
+        .input {
+            display: flex;
+            position: relative;
+
+          input {
+              @extend .ru;
+              width: 23%;
+              color: #ee3b3a;
+              margin-right: 0;
+              padding-top: 11px;
+
+            &::placeholder {
+                font-family: "Helvetica-Light";
+                color: #ee3b3a;
+            }
+          }
+
+          .loupe {
+              margin-left: auto;
+              position: absolute;
+              left: 82.5%;
+              padding: 5px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .tool-bar {
+      display: flex;
+      align-items: flex-start;
+      height: 273px;
+      margin-top: 35px;
+      
+    .tool-bar-wrapper {
+        display: flex;
+        justify-content: space-between;
+        
+      .main-links {
+          .hide-menu {
+              display: none;
+              flex-direction: column;
+              align-items: center;
+              position: absolute;
+              width: 201px;
+              background-color: rgba(0, 0, 0, 0.9);
+              margin-top: -21px;
+              
+              &::before {
+                  display: block;
+                  position: absolute;
+                  content: url("../img/trinagle-hide-menu.png");
+                  top: -14px;
+                  left: 8px;
+              }
+              
+              &-list {
+                  list-style-type: none;
+                  
+                  
+                  .hide-menu-item {
+                      margin: 20px 0;
+                      
+                      a {
+                          font-family: "Helvetica-Light";
+                          font-size: 0.875rem;
+                          color: #ffffff;
+                          text-transform: uppercase;
+                          text-decoration: none;
+                      }
+                  }
+              }
+          }
+
+        .login-block {
+            display: flex;
+            flex-direction: column;
+            padding: 7px 0;
+
+          .login {
+              font-family: "Helvetica-Regular";
+                font-size: 0.9em;
+                color: #ffffff;
+                text-decoration: none;
+          }
+
+          .registration {
+              @extend .login;
+              text-decoration: underline;
+          }
+
+        }
+        .social-btn {
+            display: flex;
+            font-size: 0em;
+            
+            img {
+                margin-right: 13px;
+            }
+        }
+
+        .purchases-block {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            width: 217px;
+            border: 2px solid #ff4544;
+            border-radius: 4px;
+            border-bottom: none;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+            background-color: #dd3635;
+            margin-top: 4px;
+
+            .img-cart {
+              width: 55px;
+              
+              img {
+                  width: 100%;
+              }
+          }
+
+            .purchases {
+                .text-cart {
+                    font-family: "Helvetica-Bold";
+                    font-size: 1.25em;
+                    line-height: 24px;
+                    color: #ffffff;
+                    text-transform: capitalize;
+                    padding-top: 5px;
+                    padding-bottom: 10px;
+                }
+                
+                .count {
+                    font-family: "Helvetica-Light";
+                    font-size: 0.75em;
+                    line-height: 13px;
+                    color: rgba(255, 255, 255, 0.7);
+                }
+                
+                .summ {
+                    font-family: "Helvetica-Light";
+                    font-size: 0.75em;
+                    line-height: 13px;
+                    color: rgba(255, 255, 255, 0.7);
+                    padding-bottom: 7px;
+                }
+                
+                span {
+                    color: rgba(255, 255, 255, 1);
+                }
+            }
+        }
+      }
+    }
+
+    .logo {
+      text-align: center;
+        
+      .descriptor {
+          font-family: "Helvetica-Medium";
+          font-size: 3rem;
+          font-weight: bold;
+          text-transform: uppercase;
+      }
+    }
+      
+      .contacts {
+          line-height: 23px;
+          color: #ffffff;
+          text-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+          margin-left: 13px;
+          
+          .hot-line {
+              font-family: "Helvetica-Light";
+              font-size: 0.9rem;
+              letter-spacing: 2px;
+          }
+          
+          .phone {
+              font-family: "Helvetica-Medium"; 
+              font-size: 1.4rem;
+              letter-spacing: 1px;
+          }
+          
+          .work-day {
+              @extend .hot-line;
+          }
+          
+          .call-worker {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              font-family: "Helvetica-Bold";
+              font-size: 2.3125rem;
+              line-height: 25px;
+              text-align: center;
+              text-transform: uppercase;
+              text-shadow: none;
+              border: 2px solid #ff4544;
+              border-radius: 4px;
+              border-bottom: none;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+              background-color: #dd3635;
+                            padding: 10px 20px;
+              margin-top: 11px;
+
+
+              
+              span {
+                  font-family: "Helvetica-Bold";
+                  font-size: 1.625rem;
+              }
+          }  
+      }
+  }
+    
+    .doors-block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: -50px;
+        
+        .doors {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            
+            .doors-pack {
+                width: 140px;
+                img {
+                    width: 100%;
+                }
+            }
+            
+            &-description {
+                font-family: "Bebas-Bold";
+                font-size: 4.1rem;
+                line-height: 45px;
+                text-align: center;
+                text-transform: uppercase;
+                
+                span {
+                    font-family: "Bebas-Bold";
+                    font-size: 1.5rem;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
